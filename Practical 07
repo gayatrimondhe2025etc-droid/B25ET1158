@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int stack[5];
+int top = -1;
+
+void insert()
+{
+    int element;
+
+    if (top == 4)
+    {
+        printf("\nStack is full");
+    }
+    else
+    {
+        printf("\nEnter element: ");
+        scanf("%d", &element);
+
+        top++;
+        stack[top] = element;
+
+        printf("Element inserted successfully");
+    }
+}
+
+int main()
+{
+    insert();
+    insert();
+    insert();
+    insert();
+    insert();
+    insert();
+
+    return 0;
+}
